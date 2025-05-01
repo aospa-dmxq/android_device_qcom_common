@@ -24,7 +24,7 @@ $(call inherit-product-if-exists, hardware/qcom/media/product.mk)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.mediaserver.64b.enable=true
 
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     device/qcom/common/vendor/media/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml
 
 # Packages
@@ -39,8 +39,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.media.recorder-max-base-layer-fps=60
 
 # Media Init
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     device/qcom/common/vendor/media/init.qti.media.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.media.sh
 
 # Get non-open-source specific aspects.
-$(call inherit-product-if-exists, vendor/qcom/common/vendor/media/media-vendor.mk)
+#$(call inherit-product-if-exists, vendor/qcom/common/vendor/media/media-vendor.mk)
